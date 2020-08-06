@@ -21,7 +21,7 @@ args <- add_argument(args, "-rd", help="directory with bicmix run outputs(each
 args <- add_argument(args, "-it", help="iteration at which to use bicmix 
                                       output")
 args <- add_argument(args, "-nr", help="number of runs of bicmix that you ran")
-args <- add_argument(args, "-gn", help="GeneNet probability that an edge is 
+args <- add_argument(args, "-gn_prob", help="GeneNet probability that an edge is 
                                       non-zero")
 args <- add_argument(args, "-thresh", help="number of times you require an edge
                                        be duplicated to be included in network 
@@ -38,7 +38,7 @@ gn_fn    <- argv$gn
 num_runs <- argv$nr
 thresh   <- argv$thresh
 outdir   <- argv$out
-gn_prob  <- argv$gn
+gn_prob  <- argv$gn_prob
 
 
 # read in the true data
