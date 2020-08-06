@@ -2,14 +2,14 @@
 #This recovers tissue-specific networks for tissues from Bicmix output
 ##### Chuan Gao, edited and updated by A. Gewirtz #####
 
-library("GeneNet")
+library(GeneNet)
 library(Matrix)
 library(reshape2)
 library(ggplot2)
 library(argparser)
 
 # argument parsing
-args <- arg_parser("program");
+args <- arg_parser("program", hide.opts =T);
 args <- add_argument(args, "-out", help="output directory")
 args <- add_argument(args, "-gn", help="file with gene names in order used in
                                      expression matrix, one per line")
