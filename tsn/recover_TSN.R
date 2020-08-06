@@ -6,7 +6,7 @@ library("GeneNet")
 library(Matrix)
 library(reshape2)
 library(ggplot2)
-library(argparse)
+library(argparser)
 
 # argument parsing
 args <- arg_parser("program");
